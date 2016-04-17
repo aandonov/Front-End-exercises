@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML Form</title>
+</head>
+<body>
+<form>
+    <span>Member name:</span>
+    <input type="text" name="member name" required="required"/><br/>
+    <span>Email:</span>
+    <input type="text" name="email" required="required"/><br/>
+    <span>School:</span>
+    <input type="text" name="school" required="required"/><br/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
