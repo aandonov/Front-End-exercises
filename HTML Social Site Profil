@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Doge Social Network - Profile</title>
+</head>
+<body style="background-color: skyblue">
+    <h1>Doge Social Network</h1>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="Friends.html">Friends</a></li>
+    </ul>
+    <hr />
+    <h2>Profile of Doge</h2>
+    <hr />
+    <img src="http://barkpost-assets.s3.amazonaws.com/wp-content/uploads/2013/11/dogesmall.jpg" width="150" height="150" /> <br />
+    <strong>Name</strong> : Doge <br />
+    <strong>Birthday</strong> : Top secret <br />
+    <strong>Occupation</strong> : Celebrity <br />
+    <strong>Are of occupation</strong> : Web <br />
+</body>
+</html>
