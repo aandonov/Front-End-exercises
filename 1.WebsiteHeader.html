@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="WebsiteHeader.css" type="text/css" rel="stylesheet" />
+    <title>01.Website Header</title>
+</head>
+<style>
+    body {
+        width: auto;
+        background: #234667;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    a:visited {
+        color: #fff;
+    }
+    header:after {
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+    }
+    .Logo {
+        position: relative;
+        float: left;
+        width: 25%;
+        padding-top: 1%;
+        text-align: center;
+    }
+    .Content {
+        position: relative;
+        float: right;
+        width: 70%;
+        text-align: right;
+        padding: 1% 2% 1% 1%;
+        font-size: 1rem;
+    }
+    .Bell, .User, .Content div:nth-of-type(3) {
+        display: inline-block;
+        color: #fff;
+    }
+    input[type="submit"], input[type="text"] {
+        background: #fff;
+        border: none;
+        height: 100%;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+    input[type="text"] {
+        border-left: 1px solid grey;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .Bell {
+        padding-right: 2%;
+    }
+    .Bell:after {
+        content: ' ' url("bell.png");
+    }
+    .Br {
+        width: 100%;
+        height: 0;
+    }
+    .Menu {
+        float: right;
+    }
+    .Menu li {
+        padding: 5px;
+        float: left;
+    }
+    .Menu ul li ul, .User ul li ul {
+        display: none;
+    }
+    /*Inner menu*/
+    .Menu ul li ul li, .User ul li ul li {
+        width: 100%;
+        text-align: left;
+    }
+    .Menu ul li:hover ul, .User ul li:hover ul {
+        display: block;
+        position: absolute;
+    }
+    .User ul li ul li {
+        padding: 2%;
+    }
+</style>
+<body>
+<header>
+    <div class="Logo">
+        <a href="https://softuni.bg/">
+            <img src="SoftuniLogo.png" alt="SoftUni logo" />
+        </a>
+    </div>
+    <div class="Content">
+        <div class="Bell">0</div>
+        <div class="User">
+            <ul>
+                <li>
+                    <a href="#">User&#9662;</a>
+                    <ul>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <form action="#" method="post">
+                <input type="text" name="Search" value="" placeholder="Search..." tabindex="1" /><!--
+--><input type="submit" name="Search" value="3" />
+            </form>
+        </div>
+        <div class="Br"></div>
+        <div class="Menu">
+            <ul>
+                <li><a href="https://softuni.bg/">News</a></li>
+                <li>
+                    <a href="https://softuni.bg/">About the university&#9662;</a>
+                    <ul>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Training courses&#9662;</a>
+                    <ul>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                        <li><a href="https://softuni.bg/">More</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://softuni.bg/">For companies</a></li>
+                <li><a href="https://softuni.bg/">Forum</a></li>
+                <li><a href="https://softuni.bg/">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+</body>
+</html>
