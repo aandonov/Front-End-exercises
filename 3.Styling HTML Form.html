@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>03.Form</title>
+    <link href="Form.css" type="text/css" rel="stylesheet" />
+    <script>
+        function Bought() {
+            document.getElementById("Basket").innerHTML = "You bought New!"
+        }
+    </script>
+</head>
+<style>
+    body {
+        margin: 20px;
+        background: url('images/formBackground.jpg');
+    }
+    .AboveText {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #fff;
+    }
+    .Content {
+        width: 335px;
+        font-size: 0.9rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    input[type="button"] {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 10px;
+        border-radius: 15px;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        border: 1px solid #000;
+    }
+    img {
+        width: 23px;
+        height: 14px;
+    }
+    #Basket {
+        color: #ff0000;
+        font-size: 3rem;
+        font-family: Arial;
+    }
+    /*Positioning fields*/
+    .BuyButton {
+        width: 335px;
+        text-align: center;
+    }
+    textarea {
+        height: 75px;
+        width: 165px;
+        position: relative;
+        left: 13%;
+    }
+    #AddressLabel {
+        vertical-align: top;
+    }
+    input[type="text"] {
+        height: 20px;
+        position: relative;
+    }
+    .radioButtons {
+        padding: 8px;
+        word-spacing: 15px;
+    }
+    #Name {
+        left: 17%;
+    }
+    #Email {
+        left: 16.8%;
+    }
+    #Phone {
+        left: 16.5%;
+    }
+    #PostCode {
+        left: 10%;
+    }
+    #Country {
+        left: 12.5%;
+    }
+    #CardID {
+        left: 5%;
+    }
+    #SecurityCode {
+        left: 3.3%;
+    }
+    #CardName {
+        left: 3.6%;
+    }
+</style>
+<body>
+<div class="AboveText">Step 1: Your details</div>
+<form class="Content">
+    <label for="Name">Name</label>
+    <input id="Name" type="text" placeholder="First and last name" />
+</form>
+<form class="Content">
+    <label for="Email">Email</label>
+    <input id="Email" type="text" placeholder="example@domain.com" />
+</form>
+<form class="Content">
+    <label for="Phone">Phone</label>
+    <input id="Phone" type="text" placeholder="eg. +447500000000" />
+</form>
+<div class="AboveText">Step 2: Delivery address</div>
+<form class="Content">
+    <label id="AddressLabel" for="Address">Address</label>
+    <textarea id="Address"></textarea>
+</form>
+<form class="Content">
+    <label for="PostCode">Post code</label>
+    <input id="PostCode" type="text" />
+</form>
+<form class="Content">
+    <label for="Country">Country</label>
+    <input id="Country" type="text" />
+</form>
+<div class="AboveText">Step 3: Card details</div>
+<form class="Content">
+    <label for="CardType">Card type</label><br />
+    <div class="radioButtons">
+        <input type="radio" name="card" value="Visa" /><img src="http://visa.ca/merchant/resources/logos-and-trademarks/images/logos/jpg/visa-full-colour.jpg" alt="visa logo" />VISA
+        <input type="radio" name="card" value="AmEx" /><img src="http://www.magentocommerce.com/magento-connect/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/a/m/amex_1.jpg" alt="AmEx logo" />AmEx
+        <input type="radio" name="card" value="Mastercard" /><img src="http://www.zacknoblauch.com/wp-content/uploads/2012/11/mastercard-logo-redesign1.jpg" alt="Mastercard logo" />Mastercard
+    </div>
+</form>
+<form class="Content">
+    <label for="CardID">Card number</label>
+    <input id="CardID" type="text" />
+</form>
+<form class="Content">
+    <label for="SecurityCode">Security Code</label>
+    <input id="SecurityCode" type="text" />
+</form>
+<form class="Content">
+    <label for="CardName">Name on card</label>
+    <input id="CardName" type="text" placeholder="exact name as on the card" />
+</form>
+<div class="BuyButton">
+    <input type="button" name="BuyIt" value="buy it!" onclick="Bought()" />
+</div>
+<div id="Basket"></div>
+</body>
+</html>
