@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="FlightOrder.css" type="text/css" rel="stylesheet" />
+    <title>02.Flight Order</title>
+</head>
+<style>
+    body {
+        margin: 1%;
+        background: #FFC6D2;
+    }
+    .Content {
+        height: 300px;
+        width: 400px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    .Destination div, .Departure div, .Return div, .MoreInfo div {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-style: italic;
+        margin: 0.5%;
+    }
+    .Prefered {
+        width: 73%;
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .Numbers {
+        width: 99%;
+        word-spacing: 42px;
+    }
+    .Departure div:first-of-type, .Departure div:nth-of-type(2),
+    .Destination div:first-of-type, .Destination div:nth-of-type(2),
+    .Return div:first-of-type, .Return div:nth-of-type(2),
+    .MoreInfoFirst, .MoreInfoSecond {
+        width: 48%;
+    }
+    .Sub {
+        margin-top: 1%;
+        width: 98.5%;
+    }
+    input[type="submit"] {
+        float: right;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 49%;
+    }
+    input[type="date"] {
+        width: 97%;
+    }
+    .Destination select, .MoreInfo select {
+        width: 100%;
+    }
+    input[type="time"] {
+        width: 46%;
+    }
+    input[type="number"] {
+        width: 29%;
+    }
+</style>
+<body>
+<div class="Content">
+    <h1>Flight Order</h1>
+    <form action="#" method="post">
+        <div class="Destination">
+            <div>
+                <label for="From">From</label>
+                <br />
+                <select id="From">
+                    <option>Enter a city</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Varna">Varna</option>
+                    <option value="Burgas">Burgas</option>
+                </select>
+            </div>
+            <div>
+                <label for="To">To</label>
+                <br />
+                <select id="To">
+                    <option>Enter a city</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Varna">Varna</option>
+                    <option value="Burgas">Burgas</option>
+                </select>
+            </div>
+        </div>
+        <div class="Prefered">
+            <input id="Directions" type="checkbox" name="directs" value=" " />
+            <label for="Directions">Prefer directs</label>
+        </div>
+        <div class="Departure">
+            <div>
+                <label for="DepartureDate">Departure date</label>
+                <br />
+                <input id="DepartureDate" type="date" name="Departure" value=" " />
+            </div>
+            <div>
+                <label for="TimeIntervalDep">Time Interval</label>
+                <br />
+                <input id="TimeIntervalDep" type="time" name="Departure" value=" " />
+                <input type="time" name="Departure" value=" " />
+            </div>
+        </div>
+        <div class="Return">
+            <div>
+                <label for="ReturnDate">Return date</label>
+                <input id="ReturnDate" type="date" name="Return" value=" " />
+            </div>
+            <div>
+                <label for="TimeIntervalRet">Time Interval</label>
+                <br />
+                <input id="TimeIntervalRet" type="time" name="Return" value=" " />
+                <input type="time" name="Departure" value=" " />
+            </div>
+        </div>
+        <div>
+            <div class="MoreInfo">
+                <div class="MoreInfoFirst">
+                    <div class="Numbers">12+ 2-12 0-12</div>
+                    <br />
+                    <input type="number" name="number" value=" " />
+                    <input type="number" name="number" value=" " />
+                    <input type="number" name="number" value=" " />
+                </div>
+                <div class="MoreInfoSecond">
+                    <div>Choose class</div>
+                    <br />
+                    <select>
+                        <option value="Economy">Economy</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="Sub">
+            <input type="submit" name="Search" value="Search" />
+        </div>
+    </form>
+</div>
+</body>
+</html>
