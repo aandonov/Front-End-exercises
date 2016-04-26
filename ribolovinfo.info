@@ -1,0 +1,15 @@
+name = ribolovinfo
+description = ribolovinfo
+core = 7.x
+
+
+regions[header]=header 
+regions[content]=content 
+regions[sidebar]=sidebar 
+
+stylesheets[all][]= css/style.css
+
+
+
+
+
